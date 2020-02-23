@@ -2,6 +2,7 @@ import {
   INPUT_VALUE_CHANGE,
   ADD_ITEM,
   DELETE_ITEM,
+  RESTORE_ITEM,
   GET_INIT_DATA,
   GET_INIT_LIST
 } from '../store/actionTypes'
@@ -20,6 +21,11 @@ const getDeleteItemAction = (index) => ({
   index
 })
 
+const getRestoreItemAction = (index) => ({
+  type: RESTORE_ITEM,
+  index
+})
+
 const getInitDataAction = (value) => ({
   type: GET_INIT_DATA,
   value
@@ -33,6 +39,7 @@ export {
   getInputValueChangeAction,
   getAddItemAction,
   getDeleteItemAction,
+  getRestoreItemAction,
   getInitDataAction,
   getInitListAction
 }
